@@ -1,0 +1,25 @@
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Student Form</h5>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" *ngIf="form">
+      <div class="form-group">
+        <label for="firstname">Firstname</label>
+        <input type="text" formControlName="firstName" class="form-control" id="firstname">
+      </div>
+      <div class="form-group">
+        <label for="lastname">Lastname</label>
+        <input type="text" formControlName="lastName" class="form-control" id="lastname">
+      </div>
+      <div class="form-group">
+        <label for="age">Age</label>
+        <input type="number" formControlName="age" class="form-control" id="age">
+      </div>
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <input type="number" formControlName="rating" class="form-control" id="rating">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
